@@ -19,7 +19,7 @@ jobs:
         run: pnpm install
 
       - name: Build static site
-        run: pnpm build && pnpm export
+        run: pnpm build && pnpm next export
 
       - name: Deploy to server via SCP
         uses: appleboy/scp-action@master
