@@ -4,6 +4,7 @@ import { lazy, Suspense } from "react";
 
 const HomePage = lazy(() => import("./sections/HomePage"));
 const ServerIntro = lazy(() => import("./sections/ServerIntro"));
+const ProfileCard = lazy(() => import("./sections/ProfileCard"))
 
 
 export const MainSections = () => {
@@ -17,6 +18,11 @@ export const MainSections = () => {
     <section className="h-screen snap-start flex items-center justify-center">
       <Suspense fallback={<div>loading...</div>}>
         <ServerIntro />
+      </Suspense>
+    </section>
+    <section className="h-screen snap-start flex items-center justify-center">
+      <Suspense fallback={<div>loading...</div>}>
+        <ProfileCard />
       </Suspense>
     </section>
   </div>
