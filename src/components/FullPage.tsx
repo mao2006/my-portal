@@ -3,6 +3,7 @@ import { lazy, Suspense } from "react";
 
 
 const HomePage = lazy(() => import("./sections/HomePage"));
+const ServerIntro = lazy(() => import("./sections/ServerIntro"));
 
 
 export const MainSections = () => {
@@ -14,7 +15,9 @@ export const MainSections = () => {
       </Suspense>
     </section>
     <section className="h-screen snap-start flex items-center justify-center">
-      456
+      <Suspense fallback={<div>loading...</div>}>
+        <ServerIntro />
+      </Suspense>
     </section>
   </div>
   );
