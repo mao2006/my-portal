@@ -20,7 +20,7 @@ const HomePage = () => {
         这里是我的个人技术与服务导航站点，集合了博客、项目、服务监控等所有入口。
       </p>
       <p className="text-lg text-gray-500 mb-6">
-        Welcome to blues's personal portal — your one-stop entry for my blog, projects, server monitor, and more.
+        Welcome to blues&apos;s personal portal — your one-stop entry for my blog, projects, server monitor, and more.
       </p>
       <p className="text-gray-400 text-sm mb-8">
         —— 一切工程与探索的起点，欢迎常来看看！<br />
