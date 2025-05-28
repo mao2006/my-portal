@@ -2,10 +2,11 @@
 
 import Marquee from "react-fast-marquee";
 import { useState, useEffect } from "react";
+import Image from "next/image";
 
 const icons = [
     "/icons/react.svg",
-    "/icons/vue.svg",
+    "/icons/vuedotjs.svg",
     "/icons/nextdotjs.svg",
     "/icons/nodedotjs.svg",
     "/icons/typescript.svg",
@@ -52,19 +53,14 @@ export const BackgroundMarquee = () => {
             gradient={false}
             >
             {shuffledIcons.map((src, idx) => (
-                <img
-                key={src + idx + row}
-                src={src}
-                alt=""
-                style={{
-                    height: ROW_HEIGHT-25,
-                    margin: "0 32px",
-                    opacity: 0.10,
-                    filter: "drop-shadow(0 2px 8px #0003)",
-                    userSelect: "none",
-                    pointerEvents: "none",
-                }}
-                draggable={false}
+                <Image
+                    key={src + idx + row}
+                    src={src}
+                    alt=""
+                    width={52}
+                    height={52}
+                    className="h-[55px] mx-8 opacity-10 drop-shadow select-nonepointer-events-none"
+                    draggable={false}
                 />
             ))}
             </Marquee>
