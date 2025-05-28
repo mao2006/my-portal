@@ -11,6 +11,7 @@ const ProfileCard = () => (
       alt="blues 头像"
       width={240}
       height={240}
+      unoptimized
       className="rounded-full shadow-lg mb-4 object-cover border-4 border-white w-[120px] h-[120px] md:w-[240px] md:h-[240px]"
     />
 
