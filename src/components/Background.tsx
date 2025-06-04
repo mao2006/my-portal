@@ -59,7 +59,7 @@ export const BackgroundMarquee = () => {
                     alt=""
                     width={52}
                     height={52}
-                    className="h-[55px] mx-8 opacity-10 drop-shadow select-nonepointer-events-none"
+                    className="h-[55px] mx-8 opacity-10 drop-shadow select-none pointer-events-none"
                     draggable={false}
                 />
             ))}
