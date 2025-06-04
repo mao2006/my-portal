@@ -1,4 +1,5 @@
 import "./globals.css";
+import ThemeToggle from "@/components/ThemeToggle";
 
 export default function RootLayout({
   children,
@@ -8,9 +9,10 @@ export default function RootLayout({
   return (
     <html lang="zh-CN">
       <head>
-        <meta name="color-scheme" content="light only"/>
+        <meta name="color-scheme" content="light dark" />
       </head>
       <body>
+        <ThemeToggle />
         {children}
       </body>
     </html>
