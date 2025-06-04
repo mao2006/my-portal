@@ -35,7 +35,7 @@ const HomePage = () => {
           rel="noopener noreferrer"
           className="underline hover:text-blue-500 ml-1"
         >
-          浙ICP备202406XXXX号
+          浙ICP备2025175368号-1
         </a>
       </div>
     </section>
